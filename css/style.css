@@ -1,0 +1,11 @@
+:root{
+    --primary-color: #0a0a23;
+    --secondary-color: #f8b8d0;
+    --accent-color: #f8b8d0;
+
+}
+
+/* shared and common css */
+.display__flex{
+    display: flex;
+}
