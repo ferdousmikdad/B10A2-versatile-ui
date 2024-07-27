@@ -5,21 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B10A2-versatile-ui</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <nav class="display__flex">
-        <h3>Fitness</h3>
-        <ul>
-          <li><a href="">Home</a></li>
+      <nav class="nav display__flex items__center max__w">
+        <h3 class="logo-header color__accent">Fitness</h3>
+        <input type="checkbox" id="click" />
+        <label for="click" class="nav-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <ul class="display__flex">
+          <li class="p-left"><a class="nav-home" href="">Home</a></li>
           <li><a href="">Service</a></li>
           <li><a href="">Contact</a></li>
           <li><a href="">About</a></li>
         </ul>
       </nav>
+      <section class="hero-section display__flex max__w items__center">
+        <div class="hero-content">
+          <h1>
+            Get body in <span class="style-text">shape</span> & stay healthy
+          </h1>
+          <p>
+            A huge selection of health and fitness content, healthy recipes and
+            transformation stories to help you get fit and stay fit!
+          </p>
+          <div class="hero-btn">
+            <button class="btn btn__primary">Join Club Now!</button>
+            <button class="btn btn__secondary">Download App</button>
+          </div>
+        </div>
+        <div class="hero-image text__center">
+          <img src="images/images 2.png" alt="" />
+          <div class="card card-1">
+            <h3>500+</h3>
+            <p>Free Workout Videos</p>
+          </div>
+          <div class="card card-2 display__flex items__center">
+            <div class="play-btn"></div>
+            <div>
+              <h3>350+</h3>
+              <p>Video tutorial</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <!-- ---------Change Your Habits -->
+      <section></section>
+    </main>
     <footer class="footer"></footer>
-    <!-- Just try to know I'm on the right repository -->
   </body>
 </html>
