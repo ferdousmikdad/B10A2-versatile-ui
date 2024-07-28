@@ -195,3 +195,37 @@ nav ul li a{
     bottom: 8rem;
     left: 0;
 }
+
+/* --------Change Your Habits */
+.habit-content h2{
+    font-size: 4.5rem;
+}
+.habit-content p{
+    margin: 1rem 22rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.habit-lists{
+    margin-top: 6rem;
+}
+
+.habit-item img{
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    padding: .5rem;
+}
+.habit-item h3{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.habit-item p{
+    margin-top: .6rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.habit-lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
