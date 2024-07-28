@@ -18,7 +18,7 @@
         left: -100%;
         right: 0;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: start;
         transition: all 0.3s ease;
         border-radius: .8rem;
         background: rgba(19, 19, 19, 0.1);
@@ -42,11 +42,44 @@
     .hero-content{
         width: 100%;
     }
+    .hero-content h1{
+        font-size: 3.6rem;
+        margin-right: 10rem;
+        line-height: 4rem;
+    }
+    .style-text{
+        font-size: 6rem;
+    }
+    .hero-content p{
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-right: 8rem;
+    }
+    .btn{
+        /* padding: 1.6rem 3rem; */
+        padding: 0;
+        width: 16rem;
+        height: 5.5rem;
+    }
+    .btn-fulltext{
+        display: none;
+    }
+    .btn-shorttext{
+        display: inline;
+    }
     .hero-image{
         margin-top: 5rem;
         width: 100%;
+        background-size: cover;
     }
     .card-1{
-        top: 5rem;
+        top: 4rem;
+        right: 0;
+    }
+    .card-1 h3{
+        font-size: 3.5rem;
+    }
+    .card-1 p{
+        font-size: 1rem;
     }
 }
