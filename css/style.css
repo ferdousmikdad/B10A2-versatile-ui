@@ -260,3 +260,36 @@ nav ul li a{
     object-fit: cover;
     object-position: top right;
 }
+/* --------BMI Calculator */
+.bmi-header-section{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.bmi-header-section h2{
+    font-size: 4rem;
+}
+.bmi-header-section p{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+.bmi-calculator-form-container{
+    background-color: var(--color-bg);
+    margin-top: 8rem;
+}
+.bmi-calculator-form{
+    padding: 5rem 0;
+}
+/* calculator */
+.bmi-calculator{
+    width: 40%;
+    height: 200px;
+    border: 1px solid tomato;
+}
+/* calculator-form */
+.calculator-form{
+    width: 60%;
+    height: 200px;
+    border: 1px solid tomato;
+}
