@@ -381,7 +381,7 @@ select{
 } */
  .team-trainers{
   margin-top: 6rem;
-  background-color: var(--color-bg);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.8rem;
   display: flex;
   justify-content: center;
@@ -430,3 +430,49 @@ select{
   font-weight: 300;
   letter-spacing: .1rem;
  }
+
+ /* ----------Footer */
+ .footer{
+  margin-top: 8.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 6.5rem;
+ }
+ .footer-container{
+  padding-bottom: 8rem;
+ }
+ .footer-logo-container{
+   width: 60%;
+ }
+ .logo-footer{
+  font-size: 3.6rem;
+  font-style: italic;
+  font-weight: 800;
+ }
+ .footer-logo-container p{
+  font-size: 1.4rem;
+  font-weight: 300;
+  max-width: 40rem;
+  margin-top: 1rem;
+ }
+ .quick-access{
+  width: 40%;
+  justify-content: space-between;
+ }
+ .footer__items ul li{
+  list-style: none;
+  margin-top: 1rem;
+ }
+ .footer__items ul li a{
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 300;
+ }
+ .bottom-bar{
+  padding: 2rem;
+  border-top: 2px solid var(--color-bg);
+}
+.bottom-bar p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}

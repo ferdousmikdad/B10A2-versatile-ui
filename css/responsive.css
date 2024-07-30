@@ -168,4 +168,29 @@
         grid-template-columns: 1fr;
         gap: 2rem;
        }
+
+     /* Footer  */
+     .footer{
+        padding-top: 4rem;
+     }
+     .footer-container{
+        flex-direction: column;
+        margin: 0 2rem;
+     }
+     .footer-logo-container{
+        width: 100%;
+     }
+     .logo-footer{
+        font-size: 7rem;
+     }
+     .quick-access{
+        flex-direction: column;
+        width: 100%;
+     }
+     .footer__items{
+        margin-top: 3rem;
+     }
+     .bottom-bar{
+        margin: 0 2rem;
+     }
 }
