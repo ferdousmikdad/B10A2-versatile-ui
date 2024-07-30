@@ -129,4 +129,23 @@
         margin-bottom: 3rem;
         width: 100%;
     }
+    /* BMI-Form */
+    .bmi-calculator-form{
+        flex-direction: column;
+    }
+    .bmi-calculator{
+        width: 100%;
+    }
+    .bmi-calculator-form{
+        margin: 2rem;
+    }
+    .calculator-form{
+        margin: 5rem 0 0 0;
+        width: 100%;
+    }
+    .form-grid{
+        width: 100%;
+        grid-template-columns: 49% 49%;
+        gap: 1rem;
+    }
 }

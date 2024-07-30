@@ -167,7 +167,7 @@
                 regardless of income or access to a gym.
               </p>
               <form class="bmi-form" action="">
-                <div class="form-row">
+                <div class="form-grid display__flex">
                   <input
                     type="text"
                     name="height"
@@ -176,9 +176,26 @@
                   />
                   <input
                     type="text"
-                    name="height"
-                    id="height"
+                    name="weight"
+                    id="weight"
                     placeholder="Weight/kg"
+                  />
+                  <input type="text" name="age" id="age" placeholder="Age" />
+                  <select name="sex" id="sex">
+                    <option class="option" value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="form-column">
+                  <select name="activity" id="activity">
+                    <option class="option" value="male">
+                      Select an activity factor
+                    </option>
+                  </select>
+                  <input
+                    class="btn form-btn-submit"
+                    type="submit"
+                    value="Calculate"
                   />
                 </div>
               </form>

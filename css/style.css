@@ -327,3 +327,33 @@ td {
 .bmi-form {
   margin-top: 2rem;
 }
+.form-grid{
+  margin-top: 3.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+input[type="text"],
+select{
+  border: none;
+  border-radius: .8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+#height,
+#weight,
+#sex,
+#age{
+  padding: 1.2rem;
+}
+#activity{
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+}
+.form-btn-submit{
+  margin-top: 3.5rem;
+  padding: 1.6rem 6rem;
+}
