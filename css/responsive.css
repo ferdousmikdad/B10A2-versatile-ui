@@ -11,7 +11,7 @@
     nav ul{
         position: absolute;
         display: block;
-        height: 95vh;
+        height: 50vh;
         margin: 1rem;
         width: 95%;
         top: 11rem;
@@ -129,12 +129,19 @@
         margin-bottom: 3rem;
         width: 100%;
     }
+
     /* BMI-Form */
+    .bmi-header-section{
+        margin: 2rem;
+    }
+    .bmi-calculator-form-container {
+        margin-top: 4rem;
+      }
+    .bmi-calculator{
+          width: 100%;
+    }
     .bmi-calculator-form{
         flex-direction: column;
-    }
-    .bmi-calculator{
-        width: 100%;
     }
     .bmi-calculator-form{
         margin: 2rem;
@@ -143,9 +150,22 @@
         margin: 5rem 0 0 0;
         width: 100%;
     }
+    .bmi-calculator h3,
+    .calculator-form h3{
+        font-size: 2.5rem;
+    }
     .form-grid{
         width: 100%;
         grid-template-columns: 49% 49%;
         gap: 1rem;
     }
+
+    /* Tem-section */
+    .team-section{
+        margin: 6.5rem 2rem 0 2rem;
+    }
+    .team-trainers-inner{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+       }
 }
