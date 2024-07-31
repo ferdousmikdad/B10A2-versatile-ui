@@ -8,8 +8,9 @@
 :root {
   --color-white: #ffffff;
   --color-text: rgba(255, 255, 255, 0.5);
+  --color-white-semi-transparent: rgba(255, 255, 255, 0.1);
   --color-accent: #e6533c;
-  --color-bg: rgba(34, 34, 34);
+  --color-bg: rgb(34, 34, 34);
   --color-body: #000000;
 
   --max-w: 106rem;
@@ -30,6 +31,7 @@ body {
   color: var(--color-text);
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -39,6 +41,9 @@ h3 {
 p {
   line-height: 2rem;
 }
+a{
+  text-decoration: none;
+}
 
 /* shared and common css */
 .max__w {
@@ -47,6 +52,18 @@ p {
 }
 .m__section {
   margin-top: 10rem;
+}
+.m__top3{
+  margin-top: 3rem;
+}
+.m__top4{
+  margin-top: 4rem;
+}
+.m__top5{
+  margin-top: 5rem;
+}
+.m__top8{
+  margin-top: 8rem;
 }
 .display__flex {
   display: flex;
@@ -76,16 +93,17 @@ p {
 }
 .btn__secondary {
   background: none;
-  border: 1px solid rgba(255, 255, 255);
+  border: 1px solid var(--color-white-semi-transparent);
 }
 
 /* --------Header-section------ */
 .header {
-  background: linear-gradient(
-    180deg,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
-  );
+  background: linear-gradient(to bottom, 
+    rgba(17, 17, 17, .5) 0%, 
+    rgba(17, 17, 17, 1) 10%, 
+    rgba(34, 34, 34, .8) 40%, 
+    rgba(17, 17, 17, 1) 75%, 
+    rgba(17, 17, 17, 0) 100%);
 }
 /* navbar */
 nav {
@@ -98,7 +116,7 @@ nav {
   font-weight: 800;
 }
 nav ul {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-white-semi-transparent);
   align-items: center;
   border-radius: 40px;
   justify-content: space-around;
@@ -108,7 +126,6 @@ nav ul li {
   list-style: none;
 }
 nav ul li a {
-  text-decoration: none;
   font-size: 1.8rem;
   color: var(--color-white);
 }
@@ -130,9 +147,6 @@ nav ul li a {
   cursor: pointer;
 }
 /* hero-section */
-.hero-section {
-  margin-top: 7rem;
-}
 .hero-content {
   width: 55%;
 }
@@ -142,16 +156,12 @@ nav ul li a {
   line-height: 7.5rem;
 }
 .hero-content p {
-  margin-top: 3rem;
   line-height: 2.5rem;
 }
 .style-text {
   font-family: "Miama";
   font-weight: 400;
   font-size: 13rem;
-}
-.hero-btn {
-  margin-top: 3rem;
 }
 .btn-shorttext {
   display: none;
@@ -161,10 +171,9 @@ nav ul li a {
   width: 45%;
 }
 .card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-white-semi-transparent);
   backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.1);
-  /* width: 18rem; */
+  background: var(--color-white-semi-transparent);
   padding: 1.7rem 2rem;
   border-radius: 1rem;
 }
@@ -210,17 +219,12 @@ nav ul li a {
   font-weight: 300;
   font-size: 1.4rem;
 }
-.habit-lists {
-  margin-top: 6rem;
-}
-
 .habit-item img {
   border-radius: 50%;
   background-color: var(--color-bg);
   padding: 0.5rem;
 }
 .habit-item h3 {
-  margin-top: 3rem;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -282,7 +286,6 @@ nav ul li a {
 }
 .bmi-calculator-form-container {
   background-color: var(--color-bg);
-  margin-top: 8rem;
 }
 .bmi-calculator-form {
   padding: 5rem 0;
@@ -304,7 +307,7 @@ table {
 th,
 td {
   text-align: left;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-white-semi-transparent);
   padding: 1.5rem;
 }
 th {
@@ -326,11 +329,7 @@ td {
   font-size: 1.4rem;
   margin-top: 1.4rem;
 }
-.bmi-form {
-  margin-top: 2rem;
-}
 .form-grid{
-  margin-top: 3.5rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -340,7 +339,7 @@ input[type="text"],
 select{
   border: none;
   border-radius: .8rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-white-semi-transparent);
   font-size: 1.6rem;
   color: var(--color-text);
   font-family: "Inter", sans-serif;
@@ -352,16 +351,15 @@ select:focus{
 #height,
 #weight,
 #sex,
-#age{
-  padding: 1.2rem;
+#age,
+#activity{
+  padding: 1.5rem;
 }
 #activity{
   width: 100%;
-  padding: 1.2rem;
   margin-top: 1.2rem;
 }
 .form-btn-submit{
-  margin-top: 3.5rem;
   padding: 1.6rem 6rem;
 }
 
@@ -379,14 +377,8 @@ select:focus{
   letter-spacing: .1rem;
   margin-top: 1.4rem;
 }
-/* .trainer-1{
-  background-image: url(../images/trainer1.png);
-  background-repeat: no-repeat;
-  
-} */
  .team-trainers{
-  margin-top: 6rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-white-semi-transparent);
   border-radius: 1.8rem;
   display: flex;
   justify-content: center;
@@ -403,14 +395,12 @@ select:focus{
     width: 100%;
     height: 27rem;
 }
-
 .trainers img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1.8rem;
 }
-
 .trainers::before {
     content: '';
     position: absolute;
@@ -438,8 +428,7 @@ select:focus{
 
  /* ----------Footer */
  .footer{
-  margin-top: 8.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-white-semi-transparent);
   padding-top: 6.5rem;
  }
  .footer-container{
@@ -468,9 +457,8 @@ select:focus{
   margin-top: 1rem;
  }
  .footer__items ul li a{
-  text-decoration: none;
   color: var(--color-text);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
  }
  .bottom-bar{
