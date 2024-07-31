@@ -170,6 +170,11 @@
         gap: 2rem;
        }
 
+    /* Blog-section */
+    .blog-posts{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
      /* Footer  */
      .footer{
         padding-top: 4rem;

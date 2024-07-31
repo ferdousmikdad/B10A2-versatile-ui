@@ -43,8 +43,8 @@ p {
 }
 a{
   text-decoration: none;
+  color: var(--color-white);
 }
-
 /* shared and common css */
 .max__w {
   max-width: var(--max-w);
@@ -52,6 +52,9 @@ a{
 }
 .m__section {
   margin-top: 10rem;
+}
+.m__top1{
+  margin-top: 1.4rem;
 }
 .m__top3{
   margin-top: 3rem;
@@ -70,6 +73,14 @@ a{
 }
 .items__center {
   align-items: center;
+}
+.text__sm{
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  font-weight: 300;
+}
+.text__3xl{
+  font-size: 3rem;
 }
 .text__center {
   text-align: center;
@@ -424,6 +435,29 @@ select:focus{
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: .1rem;
+ }
+
+ /* ----------Blog */
+ .blog-heading h2{
+  font-size: 4rem;
+ }
+ .blog-post-image{
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.8rem;
+  object-fit: cover;
+ }
+ .blog-posts{
+  justify-content: space-between;
+ }
+ .blog-post{
+  width: 33rem;
+ }
+ .blog-post a{
+  margin-top: 1rem;
+ }
+ .more-blog-btn button{
+  margin: 0 auto;
  }
 
  /* ----------Footer */
