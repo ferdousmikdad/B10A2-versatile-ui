@@ -182,15 +182,18 @@
                   />
                   <input type="text" name="age" id="age" placeholder="Age" />
                   <select name="sex" id="sex">
+                    <option value=""disabled selected hidden>Sex</option>
                     <option class="option" value="male">Male</option>
                     <option value="female">Female</option>
                   </select>
                 </div>
                 <div class="form-column">
                   <select name="activity" id="activity">
-                    <option class="option" value="male">
+                    <option class="option" value=""disabled selected hidden>
                       Select an activity factor
                     </option>
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="lightly-active">Lightly active</option>
                   </select>
                   <input
                     class="btn form-btn-submit"
