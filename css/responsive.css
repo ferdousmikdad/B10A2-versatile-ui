@@ -115,11 +115,6 @@
     .card-image{
         width: 100%;
     }
-    .card-image img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
     .card-content h2{
         font-size: 3rem;
     }
@@ -130,6 +125,13 @@
         margin-bottom: 3rem;
         width: 100%;
     }
+    .card-image{
+        width: 100%;
+        height: 100%;
+    }
+    .card-image img {
+        transform: scale(1.5) translate(-30px, 15%);
+      }
 
     /* BMI-Form */
     .bmi-header-section{
@@ -171,9 +173,16 @@
        }
 
     /* Blog-section */
+    .blog-section{
+        margin: 7rem 2rem;
+    }
     .blog-posts{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .blog-post{
+        width: 100%;
+        margin: 1rem 0;
     }
      /* Footer  */
      .footer{
