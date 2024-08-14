@@ -137,6 +137,9 @@
     .bmi-header-section{
         margin: 2rem;
     }
+    .bmi-header-section h2{
+        font-size: 3rem;
+    }
     .bmi-calculator-form-container {
         margin-top: 4rem;
       }
@@ -167,6 +170,9 @@
     .team-section{
         margin: 6.5rem 2rem 0 2rem;
     }
+    .team-content h2{
+        font-size: 3rem;
+    }
     .team-trainers-inner{
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -183,6 +189,9 @@
     .blog-post{
         width: 100%;
         margin: 1rem 0;
+    }
+    .more-blog-btn button{
+        padding: 1.6rem;
     }
      /* Footer  */
      .footer{
